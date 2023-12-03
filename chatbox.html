@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbox</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px dotted;
+            width: 300px;
+            height: 300px;
+        }
+        .chatmessage{
+            height: 300px;
+            overflow-y: scroll;
+            width:10px;
+            border: 1px solid;
+            background-color: rgb(185, 4, 4);
+        }
+        input{
+            width: 300px;
+            margin-top: 90%;
+        }
+        button{
+            margin-top: 90%;
+            background-color: aquamarine;
+        }
+        button:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbox" id="displaymessage">
+        <div class="chatmessage" id="chatinput">
+
+        </div>
+
+    </div>
+</body> 
+<input type="text"placeholder="type message here" value="" id=" send">
+<button class="send-btn" id="sendbtn">send</button>
+<script src="chatbox.js"></script>
+</html>
